@@ -1,102 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-management-system</title>
-    <style> .navheader  {
-        background-color:#FEE3EC;
-        color: white;
-        padding: 15px;
-        
-    
-    }
-    footer{
-        background-color:#FEE3EC;
-        color: white;
-        padding: 15px;
-        text-align: center;
-    }
-   #empMain{
-        background-color:#A68DAD;
-        color: white;
-        padding: 15px;
-      text-decoration: underline;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    input[type=text] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
- } 
-input[type=text]:focus {
-  background-color: lightblue;
-
-}
-
- select
- {
-  padding: 12px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
- } 
-
- 
-    </style>
-</head>
-<body>
-
-    <header>
-        <nav class="navheader">
-
-                <a href="./index.html" >Home</a> 
-                <a href="./accounting.html">About-us</a>
-                       
-            </nav>
-       
-    </header>
-<main>
-  <div id="empMain">
-</div>
-<div id="formDiv">
-<form id="form">
-    <label for="fullName">Full Name :</label>
-  <input type="text" id="fullName" name="fullName" required><br>
-  <label for="department">Department :  </label>
-  <select name="department" id="empdepartment">
-    <option value="Administration">Administration</option>
-    <option value="Marketing">Marketing</option>
-    <option value="Development">Development</option>
-    <option value="Finance">Finance</option>
-  </select>
-  <br>
-  <label for="level">level :  </label>
-  <select name="level" id="emplevel">
-    <option value="Junior">Junior</option>
-    <option value="Mid-Senior">Mid-Senior</option>
-    <option value="Senior">Senior</option>
-  </select>
-  <br>
-  <label for="empImage">Emplooye Image:  </label>
-  <input type="text" id="empImage" name="empImage"><br>
-  <input type="submit" value="Add Emplooye" class="btn">
-
-</form>
-
-</div>
-
-
-<div id="emplooyes"></div>
-<script src="app.js"></script>
-</main>
-    <footer>
-        <p >
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>HR-management-system</title>
+      <link rel="stylesheet" href="style/style.css">
+   </head>
+   <body>
+      <header>
+         <nav class="navheader">
+            <h1 class="h1H">HR-management Page</h1>
+            <div class="nav">
+              <a href="./index.html" >Home</a> 
+              <a href="./accounting.html">Accounting</a>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <div id="empMain">
+            <div id="formDiv">
+                <form id="form">
+                  <label for="fullName">Full Name :</label>
+                  <input type="text" id="fullName" name="fullName" required><br>
+                  <label for="department">Department :  </label>
+                  <select name="department" id="empdepartment">
+                      <option value="Administration">Administration</option>
+                      <option value="Marketing">Marketing</option>
+                      <option value="Development">Development</option>
+                      <option value="Finance">Finance</option>
+                  </select>
+                  <br>
+                  <label for="level">level :  </label>
+                  <select name="level" id="emplevel">
+                      <option value="Junior">Junior</option>
+                      <option value="Mid-Senior">Mid-Senior</option>
+                      <option value="Senior">Senior</option>
+                  </select>
+                  <br>
+                  <label for="empImage">Emplooye Image:  </label>
+                  <input type="text" id="empImage" name="empImage"><br>
+                  <input type="submit" value="Add Emplooye" class="btn">
+                </form>
+            </div>
+        </div>
+         <div id="emplooyes" class="container"></div>
+         <script src="app.js"></script>
+      </main>
+      <footer>
+         <p >
             &copy; 2022 copyright
-            <a href=https://www.facebook.com/login.php>FB</a>
-
-        </p>
-    </footer>
-</body>
+            <br/>
+            <a href=https://www.facebook.com>FB</a>
+         </p>
+      </footer>
+   </body>
 </html>
